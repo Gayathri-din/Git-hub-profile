@@ -1,0 +1,282 @@
+1.github profile page:
+
+index.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="github.css">
+ <link rel= "stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+<!-- <div style="background-color: grey;padding-top: 50px;">
+  <center>GITHUB</center>
+</div>-->
+
+
+<div class="header">
+  <h1>GITHUB</h1>
+</div>
+<i class="fa-brands fa-facebook"></i>
+<div class="rectangle">
+</div>
+
+<div class="rect1"></div>
+<div class="rect2"></div>
+<div class="rect3"></div>
+<div class="rect4">Search</div>
+<div class="rect5"></div>
+</body>
+</html>
+
+
+github.css:
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color:rgb(172, 168, 168);
+}
+
+.header{
+    padding:20px;
+    background-color: rgb(51, 66, 65);
+    text-align: center;
+    color: white;
+}
+
+.rectangle {
+        height: 500px;
+        width:  350px;
+        background-color: #555;
+        margin: 100px;
+       border-radius: 25px; display: inline-flex;
+        
+}
+.rect1{
+    height: 150px;
+    width:  150px;
+    background-color: #555;
+    margin: 100px;
+   border-radius: 25px; 
+   position: absolute;
+   left: 500px;
+   top: 200px;
+}
+.rect2{
+    height: 150px;
+    width:  150px;
+    background-color: #555;
+    margin: 100px;
+   border-radius: 25px; 
+   position: absolute;
+   left: 700px;
+   top: 200px;
+  
+   
+}
+.rect3{
+    height: 150px;
+    width:  150px;
+    background-color: #555;
+    margin: 100px;
+    border-radius: 25px; 
+    position: absolute;
+    left: 900px;
+    top: 200px;
+  
+}
+.rect4{
+    height:35px;
+    width:  500px;
+    background-color: #555;
+    margin: 100px;
+    border-radius: 10px; 
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    color: white;
+    padding-left:15px ;
+    padding-top: 10px;
+    text-transform: uppercase;
+    }
+    .rect5{
+        height: 100px;
+        width:  550px;
+        background-color: #555;
+        margin: 100px;
+        border-radius: 25px; 
+        position: absolute;
+        left: 500px;
+        top: 400px;
+        
+    }
+
+
+2.flexbox
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box - Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="box">12</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="box">6</div>
+            </div>
+            <div class="col-6">
+                <div class="box">6</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="box">4</div>
+            </div>
+            <div class="col-4">
+                <div class="box">4</div>
+            </div>
+            <div class="col-4">
+                <div class="box">4</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+            <div class="col-1">
+                <div class="box">1</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+  style.css
+
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: auto;
+  padding: 2% 10%;
+}
+
+.box {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 1rem;
+  margin: 2px;
+  background: #4788c9;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  border: 2px dashed black;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-flow: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.col-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+.col-4 {
+  flex-basis: 33%;
+  max-width: 33%;
+}
+
+.col-4 {
+  flex-basis: 33%;
+  max-width: 33%;
+}
+
+.col-1 {
+  flex-basis: 8.33%;
+  max-width: 8.33%;
+}
+   
+

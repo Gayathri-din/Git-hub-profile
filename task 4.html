@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare 2 obj</title>
+    
+</head>
+<script>
+    let obj1={
+        "name":"person 1",
+        "age":5
+    }
+    let obj2={
+        "age":5,
+        "name":"person 1"
+    }
+    let obj1string=JSON.stringify(obj1);
+    let obj2string=JSON.stringify(obj2);
+    if(obj1string===obj2string){
+        console.log("the json object have the same property");
+    } else{
+        console.log("the json object have not same property");
+    }
+  </script>
+  
+<body>
+    
+</body>
+</html>
